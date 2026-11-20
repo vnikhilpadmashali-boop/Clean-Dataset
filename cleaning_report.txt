@@ -1,0 +1,29 @@
+DATA CLEANING REPORT
+====================
+Input file: 1212.csv
+Rows before cleaning: 49
+Columns before cleaning: 12
+Exact duplicate rows removed: 0
+Duplicate User_ID records removed: 0
+Missing cells before handling: 0
+Missing cells after handling: 0
+Rows after cleaning: 49
+Columns after cleaning: 12
+
+Potential outliers (IQR rule; flagged, not automatically removed):
+- User_ID: 0
+- Age: 0
+- Screen_Time: 0
+- Social_Media_Hours: 4
+- Gaming_Hours: 3
+- Entertainment_Hours: 1
+- Education_Hours: 3
+- Other_App_Hours: 3
+- Sleep_Hours: 0
+- Study_Hours: 0
+- Phone_Unlocks: 0
+
+Cleaning steps: standardized column/text whitespace; converted expected numeric
+fields; checked reasonable age/hour/unlock ranges; removed duplicate records;
+filled remaining numeric missing values with medians and categorical missing
+values with modes; exported cleaned CSV.
